@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UIChallenge, grunt, task runner, automatize, grid layout, flex layout">
+    <meta name="autor" content="Martin Mele">
+    <meta name="description" content="Responsive landing page with task runner and without css fworks">
+    <meta property="og:title" content="UI Challenge">
+    <meta property="og:type" content="Landing Page">
+    <meta property="og:description" content="Martin Mele Personal website">
+    <meta property="og:image" content="http://sitioweb.com/images/image.png">
+    <meta property="og:url" content="http://sitioweb.com">
+
+    <title>UIChallenge - Making Sense</title>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="build/css/styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+    <!-- FAVICON CSS -->
+    <link rel="shortcut icon" type="img/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <!-- GOOGLE ANALITICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158688705-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158688705-1');
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Gradient background -->
+        <div class="header__heroimage">
+
+            <h1 class="wow bounceIn">ux challenge</h1>
+
+            <!-- Slides Productos -->
+            <div class="header__slide wow fadeInUp">
+                <div class="header__product fade">
+                    <div class="header__price"><a href="#">$269 Buy</a></div>
+                    <div class="header__color">
+                        <span class="dot"></span>
+                        <span class="dot--secondary"></span>
+                    </div>
+                    <div class="header__detail">
+                        <a href="#">Details</a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quae voluptatem, optio
+                            dignissimos deserunt laboriosam dolorum repudiandae quaerat dolore commodi modi quidem
+                            mollitia culpa aperiam neque dolorem, aliquid nobis vel.</p>
+                    </div>
+                    <img src="images/clock_black.png" srcset="" alt="Gravity Black clock">
+                </div>
+                <div class="header__product fade">
+                    <div class="header__price"><a href="#">$152 Buy</a></div>
+                    <div class="header__color">
+                        <span class="dot"></span>
+                        <span class="dot--secondary"></span>
+                    </div>
+                    <div class="header__detail">
+                        <a href="#">Details</a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia quo laborum nam
+                            doloribus ut quas aspernatur quidem similique magni nisi aliquid, incidunt ducimus quod
+                            veniam tempora nemo aperiam omnis?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nostrum architecto iusto
+                            dolore iure omnis aspernatur et. Tempora officiis illo, consectetur aperiam, aut nemo id in
+                            delectus temporibus deleniti possimus.</p>
+                    </div>
+                    <img src="images/clock_brown.png" srcset="" alt="Gravity Brown clock">
+                </div>
+            </div>
+            <!-- slide buttons -->
+            <nav>
+                <ul>
+                    <li><a class="slide__btn wow fadeInLeft" onclick="currentSlide(1)">Gravity Black</a></li>
+                    <li><a class="slide__btn wow fadeInRight" onclick="currentSlide(2)">Classic Brown</a></li>
+                </ul>
+            </nav>
+            <!-- Fin slide productos -->
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <article>
+            <h2 class="wow fadeInUp">Meet our Head of HR:<br>Adventurer without limits</h2>
+            <h3 class="wow fadeInUp">This installment of Meet the Making Senser focuses on Gabriel Buyatti. Read how he
+                manages to fulfill a
+                critical role and the interests that drive him, followed by an introspective self-analysis.</h3>
+
+            <img class="wow fadeIn" src="images/gabriel_buyatti.jpg" srcset="" alt="Head of HR: Gabriel Buyatti">
+
+            <p class="wow fadeInRight">Once again we’re tapping into our company resources with another teammate
+                interview. Today it’s Nazareno
+                Oviedo’s turn, so we asked him all about his role as an UX Developer at Making Sense. To begin, a few
+                basics: he’s from Mar del Plata, and he’s a lover of tango and National music. He plays the piano and
+                the guitar and he’s curious about learning new things every day.</p>
+            <p class="wow fadeInRight">As for his professional life, Nazareno graduated from Universidad Nacional
+                Tecnológica when he was 25
+                years old. Currently, he’s part of the UX/UI team for one of our partners’ projects.</p>
+            <p class="wow fadeInRight">Once again we’re tapping into our company resources with another teammate
+                interview. Today it’s Nazareno
+                Oviedo’s turn, so we asked him all about his role as an UX Developer at Making Sense. To begin, a few
+                basics: he’s from Mar del Plata, and he’s a lover of tango and National music. He plays the piano and
+                the guitar and he’s curious about learning new things every day.</p>
+            <p class="wow fadeInRight">As for his professional life, Nazareno graduated from Universidad Nacional
+                Tecnológica when he was 25
+                years old. Currently, he’s part of the UX/UI team for one of our partners’ projects.</p>
+            </sarticle>
+    </main>
+
+    <!-- foot -->
+    <footer>
+        <a href="https://makingsense.com/" target="_blank"><img class="wow fadeInLeft"
+                src="https://makingsense.com/img/header_logo.png" alt="Making Sense logo"></a>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="build/js/scripts.min.js"></script>
+    <!-- wow on scroll animation-->
+    <script>new WOW().init();</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* Color palette */
+/* Font Familys */
+/* Font Weights */
+html, body {
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #333;
+  background: white;
+  text-align: center;
+  /*cierra header*/
+  /* Fade in slide images */ }
+  body h2 {
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.3; }
+  body h3 {
+    font-weight: 400;
+    font-size: 1.2em;
+    width: 75%;
+    margin: 1.5em auto 3em;
+    /* center fixed width */
+    line-height: 1.5; }
+  body p {
+    font-weight: 400;
+    text-align: left;
+    font-size: 1em;
+    margin: 2em 0;
+    line-height: 1.5; }
+  body header {
+    /*cierra heroimage*/ }
+    body header .header__heroimage {
+      padding: 2em 0;
+      background-color: #5da552;
+      /* For browsers that do not support gradients */
+      background: linear-gradient(120deg, #333333 50%, #5da552 50%);
+      height: auto;
+      transition: all .4s ease-in;
+      /* Slideshow container */ }
+      body header .header__heroimage h1 {
+        font-weight: 400;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        color: white;
+        margin: .4em 0 1.5em; }
+      body header .header__heroimage .header__slide {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        /* Escondo las imagenes */ }
+        body header .header__heroimage .header__slide .header__product {
+          display: none; }
+          body header .header__heroimage .header__slide .header__product img {
+            width: 100%;
+            vertical-align: middle;
+            /*para que los elementos con posición absoluta coincidan al pixel*/ }
+          body header .header__heroimage .header__slide .header__product .header__price {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #222;
+            padding: 10px 40px;
+            font-family: 600;
+            font-size: .6em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all .4s ease; }
+            body header .header__heroimage .header__slide .header__product .header__price:hover {
+              background: #5da552; }
+            body header .header__heroimage .header__slide .header__product .header__price a {
+              text-decoration: none;
+              color: white; }
+          body header .header__heroimage .header__slide .header__product .header__detail {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px 20px;
+            font-family: 600;
+            font-size: .6em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s ease;
+            overflow: hidden; }
+            body header .header__heroimage .header__slide .header__product .header__detail p {
+              display: none;
+              margin: 1.5em 2em;
+              font-weight: 400;
+              font-size: .8em;
+              color: white;
+              line-height: 1.5;
+              text-transform: none; }
+            body header .header__heroimage .header__slide .header__product .header__detail:hover {
+              background: #333;
+              left: 0;
+              top: 0;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+              body header .header__heroimage .header__slide .header__product .header__detail:hover a {
+                color: white; }
+              body header .header__heroimage .header__slide .header__product .header__detail:hover p {
+                display: block; }
+            body header .header__heroimage .header__slide .header__product .header__detail a {
+              text-decoration: none;
+              color: #333;
+              transition: all .4s ease; }
+          body header .header__heroimage .header__slide .header__product .header__color {
+            position: absolute;
+            bottom: 15%;
+            left: 20px;
+            display: flex;
+            flex-flow: column wrap; }
+            body header .header__heroimage .header__slide .header__product .header__color span.dot, body header .header__heroimage .header__slide .header__product .header__color span.dot--secondary {
+              cursor: pointer;
+              height: 12px;
+              width: 12px;
+              margin: 0 0 8px;
+              background-color: #333;
+              border-radius: 50%;
+              transition: all .4s ease; }
+              body header .header__heroimage .header__slide .header__product .header__color span.dot:hover, body header .header__heroimage .header__slide .header__product .header__color span.dot--secondary:hover {
+                background-color: grey; }
+            body header .header__heroimage .header__slide .header__product .header__color span.dot--secondary {
+              background-color: #5da552; }
+      body header .header__heroimage nav {
+        margin: 2em 0;
+        transition: all .4s ease; }
+        body header .header__heroimage nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          /*overflow: hidden;*/ }
+          body header .header__heroimage nav ul li {
+            /*background: $secundaryColor;*/
+            display: inline-block;
+            margin: 3em 0 0 0; }
+          body header .header__heroimage nav ul .slide__btn {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            font-size: .8em;
+            /*16px*/
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 30px;
+            border: solid 2px transparent;
+            transition: border 0.5s ease;
+            position: relative; }
+          body header .header__heroimage nav ul .active, body header .header__heroimage nav ul .slide__btn:hover {
+            border: solid 2px white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-shadow: 1px 1px 4px black; }
+            body header .header__heroimage nav ul .active::before, body header .header__heroimage nav ul .slide__btn:hover::before {
+              content: "/";
+              font-size: 3rem;
+              font-family: "Roboto Mono", monospace;
+              font-weight: 100;
+              font-style: italic;
+              position: absolute;
+              left: 53%;
+              top: -47px; }
+            body header .header__heroimage nav ul .active::after, body header .header__heroimage nav ul .slide__btn:hover::after {
+              content: "/";
+              font-size: 3rem;
+              font-family: "Roboto Mono", monospace;
+              font-weight: 100;
+              font-style: italic;
+              position: absolute;
+              left: 35%;
+              bottom: -40px; }
+  body main {
+    padding: .5em 2em; }
+    body main article img {
+      width: 100%; }
+  body footer {
+    padding: 2em 2em 1.5em 0;
+    background-color: #5da552;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(120deg, #5da552 50%, #333333 50%);
+    transition: all .4s ease-in;
+    text-align: right; }
+  @media only screen and (min-width: 768px) {
+    body h2 {
+      font-size: 3em;
+      /*48px*/ }
+    body h3 {
+      font-size: 1.6em;
+      /*26px*/ }
+    body p {
+      font-size: 1.5em;
+      /*24px*/ }
+    body header .header__heroimage {
+      padding-top: 5em; }
+      body header .header__heroimage h1 {
+        margin-bottom: 1.5em;
+        font-size: 3.17em;
+        /*51px*/ }
+      body header .header__heroimage .header__slide .header__product .header__price {
+        padding: 15px 50px;
+        font-size: 0.8em; }
+      body header .header__heroimage .header__slide .header__product .header__detail {
+        padding: 15px 30px;
+        font-size: 0.8em; }
+        body header .header__heroimage .header__slide .header__product .header__detail p {
+          font-size: 1.2em; }
+      body header .header__heroimage .header__slide .header__product .header__color span.dot, body header .header__heroimage .header__slide .header__product .header__color span.dot--secondary {
+        width: 18px;
+        height: 18px;
+        margin: 0 0 12px; }
+    body main {
+      padding: 2em 5em; } }
+  body .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
