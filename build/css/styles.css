@@ -15,7 +15,7 @@ body {
   background: white;
   text-align: center;
   /*cierra header*/
-  /* Fade in slide images */ }
+  /* Print Settings */ }
   body h2 {
     font-weight: 600;
     font-size: 1.4em;
@@ -219,11 +219,35 @@ body {
         margin: 0 0 12px; }
     body main {
       padding: 2em 5em; } }
-  body .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s; }
+  @media Print {
+    body {
+      font: 12pt Georgia, "Times New Roman", Times, serif;
+      line-height: 1.3; }
+      body header .header__heroimage {
+        display: none; }
+        body header .header__heroimage h1 {
+          font-size: 24pt; }
+        body header .header__heroimage .header__slide .header__product img {
+          max-width: 500px; }
+        body header .header__heroimage nav {
+          display: none; }
+      body main article img {
+        max-width: 500px; }
+      body main article h2 {
+        font-size: 16pt; }
+      body main article h3 {
+        font-size: 14pt; }
+      body main article p {
+        font-size: 12pt; }
+      body footer {
+        display: none; } }
+
+/* Fade in slide images */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s; }
 
 @-webkit-keyframes fade {
   from {
